@@ -1,10 +1,50 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
 #abc-output {
   background-color: gray;
-  height: 60px;
+  height: 100px;
+  margin: auto;
+  padding: auto;
 }
 
 #abc-buttons {
-  background: yellow;
+  text-align: justify;
+  margin: auto;
+  width: 645px;
+}
+
+#abc-audio-btns {
+  background-color: yellow;
+}
+
+.abc-button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  width: 52.5px;
+  height: 37.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+}
+
+#abc-letter {
+  text-align: center;
+  font-size: 50px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  background-color: lightgreen;
   height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,51 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
+$btn-size-desktop: 1.5;
+
 #abc-output{
   background-color:gray;
-  height:60px;
+  height:100px;
+  margin: auto;
+  padding: auto;
+
 }
 
 #abc-buttons{
-  background:yellow;
-  height: 50px;
+  text-align: justify;
+  margin: auto;
+  width:430px*$btn-size-desktop;
+}
+
+#abc-audio-btns{
+background-color: yellow;
+}
+
+.abc-button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width: 35px*$btn-size-desktop;
+  height: 25px*$btn-size-desktop;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:2px;
+}
+
+#abc-letter{
+  text-align: center;
+  font-size:50px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  background-color:lightgreen;
+  height:50px;
 }
