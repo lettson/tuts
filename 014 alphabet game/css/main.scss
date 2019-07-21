@@ -41,8 +41,6 @@ $desktopRatio: 1.8;
 }
 
 
-
-
 #navbar{
   height:50px;
   background-color: lightblue;
@@ -59,6 +57,30 @@ $desktopRatio: 1.8;
   height:300px;
   margin: auto;
   padding: auto;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  @include smartphoneMin {
+    display:block;
+  }
+
+  @include smartphoneMax {
+    display:block;
+  }
+
+  @include iPadMin {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
 }
 
 #abc-buttons{
@@ -75,7 +97,7 @@ $desktopRatio: 1.8;
 background-color: yellow;
 text-align: center;
 margin-bottom: 0px;
-margin-top: 20px;
+margin: 20px 0px;
 }
 
 #abc-audio-btns > *{
@@ -149,6 +171,7 @@ margin-top: 20px;
 
 
 #abc-letter{
+  font-size:75px;
   background-color: pink;
   font-weight: bold;
   text-align: center;
@@ -156,6 +179,9 @@ margin-top: 20px;
   margin: auto;
   position: relative;
   font-family: Verdana, Geneva, sans-serif;
+  display: block;
+
+  width: 50%;
   
   @include smartphoneMin {
     font-size:100px*$smartphoneMinRatio;
@@ -173,3 +199,13 @@ margin-top: 20px;
     font-size:100px*$desktopRatio;
   }
 }
+
+#abc-imgs {
+  display: block;
+  margin: auto;
+  width: 50%;
+  }
+
+#abc-imgs > * {
+  max-height: 150px;
+  }
