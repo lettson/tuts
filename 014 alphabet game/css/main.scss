@@ -47,6 +47,7 @@ $desktopRatio: 1.8;
   height:50px;
   background-color: lightblue;
   text-align: center;
+  color: #4CAF50;
 }
 
 #main-container{
@@ -74,6 +75,7 @@ $desktopRatio: 1.8;
 background-color: yellow;
 text-align: center;
 margin-bottom: 0px;
+margin-top: 20px;
 }
 
 #abc-audio-btns > *{
@@ -148,6 +150,7 @@ margin-bottom: 0px;
 
 #abc-letter{
   background-color: pink;
+  font-weight: bold;
   text-align: center;
   height: auto;
   margin: auto;
