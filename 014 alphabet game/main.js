@@ -123,7 +123,7 @@ const abcLvSound = [
   "#"
   ];
 
-const abcLetters = abcRu;
+const abcLetters = abcLv;
 
 var abcButtons = document.getElementById("abc-buttons");
 var audioButtons =document.getElementById("abc-audio-btns")

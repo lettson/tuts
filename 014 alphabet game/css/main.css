@@ -10,56 +10,26 @@ body {
 /* Smartphones (portrait and landscape) ----------- */
 #navbar {
   height: 50px;
-  background-color: lightblue;
   text-align: center;
   color: #4CAF50;
 }
 
 #main-container {
-  background-color: teal;
+  display: block;
 }
 
 #abc-output {
-  background-color: gray;
   height: 300px;
   margin: auto;
   padding: auto;
   text-align: center;
   font-family: Verdana, Geneva, sans-serif;
-}
-
-@media (min-width: 320px) {
-  #abc-output {
-    display: block;
-  }
-}
-
-@media (min-width: 480px) {
-  #abc-output {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  #abc-output {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-}
-
-@media (min-width: 840px) {
-  #abc-output {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #abc-buttons {
@@ -69,14 +39,13 @@ body {
   width: 80%;
 }
 
-@media (min-width: 840px) {
+@media (min-width: 880px) {
   #abc-buttons {
-    width: 800px;
+    width: 840px;
   }
 }
 
 #abc-audio-btns {
-  background-color: yellow;
   text-align: center;
   margin-bottom: 0px;
   margin: 20px 0px;
@@ -95,29 +64,29 @@ body {
 
 @media (min-width: 320px) {
   #abc-audio-btns > * {
-    font-size: 20px;
-    margin: 2px 15px;
+    font-size: 26px;
+    margin: 2px 19.5px;
   }
 }
 
 @media (min-width: 480px) {
-  #abc-audio-btns > * {
-    font-size: 24px;
-    margin: 2px 18px;
-  }
-}
-
-@media (min-width: 768px) {
   #abc-audio-btns > * {
     font-size: 30px;
     margin: 2px 22.5px;
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 768px) {
   #abc-audio-btns > * {
     font-size: 36px;
     margin: 2px 27px;
+  }
+}
+
+@media (min-width: 880px) {
+  #abc-audio-btns > * {
+    font-size: 40px;
+    margin: 2px 30px;
   }
 }
 
@@ -134,34 +103,35 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 2px;
+  margin: 3px;
+  border-radius: 3px;
 }
 
 @media (min-width: 320px) {
   .abc-button {
-    width: 35px;
-    height: 25px;
+    width: 45.5px;
+    height: 32.5px;
   }
 }
 
 @media (min-width: 480px) {
-  .abc-button {
-    width: 42px;
-    height: 30px;
-  }
-}
-
-@media (min-width: 768px) {
   .abc-button {
     width: 52.5px;
     height: 37.5px;
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 768px) {
   .abc-button {
     width: 63px;
     height: 45px;
+  }
+}
+
+@media (min-width: 880px) {
+  .abc-button {
+    width: 70px;
+    height: 50px;
   }
 }
 
@@ -171,7 +141,6 @@ body {
 
 #abc-letter {
   font-size: 75px;
-  background-color: pink;
   font-weight: bold;
   text-align: center;
   height: auto;
@@ -184,25 +153,25 @@ body {
 
 @media (min-width: 320px) {
   #abc-letter {
-    font-size: 100px;
+    font-size: 130px;
   }
 }
 
 @media (min-width: 480px) {
   #abc-letter {
-    font-size: 120px;
+    font-size: 150px;
   }
 }
 
 @media (min-width: 768px) {
   #abc-letter {
-    font-size: 150px;
+    font-size: 180px;
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 880px) {
   #abc-letter {
-    font-size: 180px;
+    font-size: 200px;
   }
 }
 
