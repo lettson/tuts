@@ -7,9 +7,20 @@ body {
   margin: 0;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+#navbar {
+  height: 50px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+#main-container {
+  background-color: teal;
+}
+
 #abc-output {
   background-color: gray;
-  height: 100px;
+  height: 300px;
   margin: auto;
   padding: auto;
 }
@@ -17,11 +28,63 @@ body {
 #abc-buttons {
   text-align: justify;
   margin: auto;
-  width: 645px;
+  text-align: center;
+  width: 80%;
+}
+
+@media (min-width: 840px) {
+  #abc-buttons {
+    width: 800px;
+  }
 }
 
 #abc-audio-btns {
   background-color: yellow;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#abc-audio-btns > * {
+  background-color: green;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 15px;
+  border-radius: 5px;
+}
+
+@media (min-width: 320px) {
+  #abc-audio-btns > * {
+    font-size: 20px;
+    margin: 2px 15px;
+  }
+}
+
+@media (min-width: 480px) {
+  #abc-audio-btns > * {
+    font-size: 24px;
+    margin: 2px 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  #abc-audio-btns > * {
+    font-size: 30px;
+    margin: 2px 22.5px;
+  }
+}
+
+@media (min-width: 840px) {
+  #abc-audio-btns > * {
+    font-size: 36px;
+    margin: 2px 27px;
+  }
+}
+
+#abc-audio-btns > *:hover {
+  cursor: pointer;
 }
 
 .abc-button {
@@ -29,8 +92,6 @@ body {
   /* Green */
   border: none;
   color: white;
-  width: 52.5px;
-  height: 37.5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -38,13 +99,68 @@ body {
   margin: 2px;
 }
 
+@media (min-width: 320px) {
+  .abc-button {
+    width: 35px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 480px) {
+  .abc-button {
+    width: 42px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .abc-button {
+    width: 52.5px;
+    height: 37.5px;
+  }
+}
+
+@media (min-width: 840px) {
+  .abc-button {
+    width: 63px;
+    height: 45px;
+  }
+}
+
+.abc-button:hover {
+  cursor: pointer;
+}
+
 #abc-letter {
+  background-color: pink;
   text-align: center;
-  font-size: 50px;
   height: auto;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
-  background-color: lightgreen;
-  height: 50px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+@media (min-width: 320px) {
+  #abc-letter {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 480px) {
+  #abc-letter {
+    font-size: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  #abc-letter {
+    font-size: 150px;
+  }
+}
+
+@media (min-width: 840px) {
+  #abc-letter {
+    font-size: 180px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

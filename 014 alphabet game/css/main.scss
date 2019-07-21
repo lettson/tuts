@@ -6,46 +6,167 @@ body {
   font-family: 'Montserrat';
   margin: 0;
 }
+/* Smartphones (portrait and landscape) ----------- */
+$smartphoneMin: 320px;
+$smartphoneMax: 480px;
+$iPadMin:768px;
+$desktop: 840px;
 
-$btn-size-desktop: 1.5;
+$smartphoneMinRatio: 1;
+$smartphoneMaxRatio: 1.2;
+$iPadMinRatio: 1.5;
+$desktopRatio: 1.8;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+      @content;
+    }
+}
+@mixin iPadMin {
+  @media (min-width: #{$iPadMin}) {
+    @content;
+  }
+}
+
+@mixin smartphoneMax {
+  @media (min-width: #{$smartphoneMax}) {
+    @content;
+  }
+}
+
+@mixin smartphoneMin {
+  @media (min-width: #{$smartphoneMin}) {
+    @content;
+  }
+}
+
+
+
+
+#navbar{
+  height:50px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+#main-container{
+  background-color:teal;
+}
 
 #abc-output{
   background-color:gray;
-  height:100px;
+  height:300px;
   margin: auto;
   padding: auto;
-
 }
 
 #abc-buttons{
   text-align: justify;
   margin: auto;
-  width:430px*$btn-size-desktop;
+  text-align: center;
+  width: 80%;
+  @include desktop {
+    width:800px;
+}
 }
 
 #abc-audio-btns{
 background-color: yellow;
+text-align: center;
+margin-bottom: 0px;
 }
+
+#abc-audio-btns > *{
+  background-color: green;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 15px;
+  border-radius:5px;
+  @include smartphoneMin {
+    font-size: 20px*$smartphoneMinRatio;
+    margin: 2px 15px*$smartphoneMinRatio;
+  }
+
+  @include smartphoneMax {
+    font-size: 20px*$smartphoneMaxRatio;
+    margin: 2px 15px*$smartphoneMaxRatio;
+  }
+
+  @include iPadMin {
+    font-size: 20px*$iPadMinRatio;
+    margin: 2px 15px*$iPadMinRatio;
+  }
+  @include desktop {
+
+    font-size: 20px*$desktopRatio;
+    margin: 2px 15px*$desktopRatio;
+  }
+  }
+
+  
+#abc-audio-btns > *:hover {
+  cursor: pointer;
+  }
 
 .abc-button{
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  width: 35px*$btn-size-desktop;
-  height: 25px*$btn-size-desktop;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin:2px;
+  @include smartphoneMin {
+    width: 35px*$smartphoneMinRatio;
+    height: 25px*$smartphoneMinRatio;
+  }
+
+  @include smartphoneMax {
+    width: 35px*$smartphoneMaxRatio;
+    height: 25px*$smartphoneMaxRatio;
+  }
+
+  @include iPadMin {
+    width: 35px*$iPadMinRatio;
+    height: 25px*$iPadMinRatio;
+  }
+
+    @include desktop {
+      width: 35px*$desktopRatio;
+      height: 25px*$desktopRatio;
+  }
 }
 
+.abc-button:hover{
+  cursor: pointer;
+  }
+
+
 #abc-letter{
+  background-color: pink;
   text-align: center;
-  font-size:50px;
   height: auto;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
-  background-color:lightgreen;
-  height:50px;
+  font-family: Verdana, Geneva, sans-serif;
+  
+  @include smartphoneMin {
+    font-size:100px*$smartphoneMinRatio;
+  }
+
+  @include smartphoneMax {
+    font-size:100px*$smartphoneMaxRatio;
+  }
+
+  @include iPadMin {
+    font-size:100px*$iPadMinRatio;
+  }
+
+    @include desktop {
+    font-size:100px*$desktopRatio;
+  }
 }
