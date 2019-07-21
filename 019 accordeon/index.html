@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .wrapper{
+      margin:10px auto;
+      widows: 75%;background-color: #7440c1;
+      border-radius:10px;
+      padding:5px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 60px 20px 0 rgba(0,0,0,0.19)
+      
+    }
+
+    .button{
+      width:100%;
+      border: 0;
+      border-radius:5px;
+      background:#eee;
+      padding:10px;
+      margin:5px 0;
+      outline:none;
+    }
+
+    .button:hover{
+      background-color: #0088b5;
+      transition-duration:1s;
+    }
+
+    .container{
+      width:200px;
+      border-radius: 5px;
+      background-color:#eee;
+      font-size:15px;
+      margin:5px;
+    }
+
+    .pic{
+      width: 100%;
+      margin: auto;
+      font-family:"comic snas MS", cursive, sans-serif;
+      cursor:pointer;
+
+    }
+
+    .pic img{
+      width:90%;
+      margin-left: 5%;
+      margin-right: 5%;
+
+      
+    }
+
+    .content{
+      width: 50%;
+      border: 1px solid lightgray;
+      border-left: none;
+      text-align: center;
+      background-color: #eee;
+      border-radius: 5px;
+      margin-top:-50px;
+      margin-left: 215px;
+      font-size:20px;
+      font-family:"courier New", Courier, monospace;
+      position: absolute;
+    }
+
+    .content:after{
+      content:" ";
+      position: absolute;
+      left: -15px;
+      top: 8px;
+      border-top: 15px solid transparent;
+      border-right: 1px solid #eee;
+      border-left: none;
+      border-bottom: 15px solid transparent;
+
+    }
+  </style>
+</head>
+<body>
+  
+  
+
+  <div class="wrapper">
+    <button class="button">Javascript</button>
+    <div class="container">
+      <p class="pic">
+        <img src="https://b.kisscc0.com/20180815/zlq/kisscc0-computer-icons-logo-brand-javascript-angle-js-5b741783856f77.0690615715343348515466.png">
+        This is a javascript course for more details click...
+      </p>
+    </div>
+    <div class="content">
+      95% off only today.
+    </div>
+    <button class="button">PHP</button>
+    <div class="container">
+      <p class="pic">
+        <img src="https://b.kisscc0.com/20180815/zlq/kisscc0-computer-icons-logo-brand-javascript-angle-js-5b741783856f77.0690615715343348515466.png">
+        This is a javascript course for more details click...
+      </p>
+    </div>
+    <div class="content">
+      in this course you will learn bla bla blah ... 95% off only today.
+    </div>
+    <button class="button">Python</button>
+    <div class="container">
+      <p class="pic">
+        <img src="https://b.kisscc0.com/20180815/zlq/kisscc0-computer-icons-logo-brand-javascript-angle-js-5b741783856f77.0690615715343348515466.png">
+        This is a javascript course for more details click...
+      </p>
+    </div>
+    <div class="content">
+      in this course you will learn bla bla blah ... 95% off only today.
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    var box=document.getElementsByClassName("button")
+    for(var i=0; i<box.length; i++){
+      box[i].addEventListener('click',function(){
+        var content=this.nextElementSibling
+        if(content.style.display="block"){
+          content.style.display="none"
+        }else{
+          content.style.display="block"
+        }
+      })
+    } 
+
+    var img=document.getElementsByClassName("pic")
+    for(var y=0; y<img.length;y++){
+      img[y].addEventListener("click",function(){
+        var contentHolder=this.nextElementSibling
+        if(contentHolder.style.display=="block"){
+          contentHolder.style.display=="none"
+        }else{
+          contentHolder.style.display=="block"
+        } 
+      })
+    }
+      
+  </script>
+</body>
+</html>
