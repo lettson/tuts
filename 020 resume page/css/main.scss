@@ -5,18 +5,15 @@
 
 html,
 body { height:100%;
-  background-color: greenyellow;
 
-  .page {
-    height: 100%;
-    border-radius: 5px;
-    clip-path: polygon(40% 0, 100% 10%, 100% 100%, 60% 100%, 0 90%, 0 0);
-    background-color: rgb(159, 4, 179);
-    padding-top: 4%;
-  }
+.page {
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+  clip-path: polygon(30% 0, 100% 20%, 100% 100%, 70% 100%, 0 80%, 0 0);
+  background: teal;
+
 }
-
-
 
 .card {
 margin:auto;
