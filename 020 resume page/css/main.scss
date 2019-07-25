@@ -1,20 +1,29 @@
 * {
   margin: 0;
+  color:white;
 }
 
 html,
 body { height:100%;
-background-color: gray; }
+  background-color: greenyellow;
 
-.page {
-  width: 80%;
-  height: 100%;
-  border-radius: 5px;
-  margin:auto;
-  background-color: cornsilk;
-  -webkit-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.75);
+  .page {
+    height: 100%;
+    border-radius: 5px;
+    clip-path: polygon(40% 0, 100% 10%, 100% 100%, 60% 100%, 0 90%, 0 0);
+    background-color: rgb(159, 4, 179);
+    padding-top: 4%;
+  }
+}
+
+
+
+.card {
+margin:auto;
+background-color: rgb(49, 80, 255);
+-webkit-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.75);
 }
 
 .container {
