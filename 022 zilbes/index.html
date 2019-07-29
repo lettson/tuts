@@ -7,6 +7,7 @@
   <title>Zilbes</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flags.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
@@ -33,9 +34,19 @@
   </div>
   -->
 </nav>
-
+<!-- -->
 <div id="output-container" class="d-none container">
   <div class="row">
+    <div id="languages" class="col-12 d-flex justify-content-end">
+      <div id="lang-lv">
+          <button class="btn btn-light btn-lg"><div class="flag flag-lv"></div></button>
+      </div>
+      <div id="lang-ru">
+        <button class="btn btn-light btn-lg"><div class="flag flag-ru"></div></button>
+      </div>
+    </div>
+  </div>
+  <div id="output" class="row d-flex">
     <div class="col-12 col-md-6 d-flex  justify-content-center">
       <div class="row">
         <div id="syllableOne">Mā</div>
@@ -45,15 +56,15 @@
     </div>
     <div id="audio-btns" class="col-12 col-md-6 d-flex  justify-content-center">
       <div>
-      <button class="btn btn-success">
+      <button class="btn btn-success btn-lg">
         &#128266 
         <audio src="" id="audioOne"></audio>
       </button>
-      <button class="btn btn-success">
+      <button class="btn btn-success btn-lg">
         &#128266 
         <audio src="" id="audioTwo"></audio>
       </button>
-      <button class="btn btn-success">
+      <button class="btn btn-success btn-lg">
         &#128266 
         <audio src="" id="audioThree"></audio>
       </button>
@@ -64,7 +75,7 @@
 <div class="container next">
   <div class="row">
     <div class="col-12 d-flex  justify-content-center">
-      <button class="btn btn-success" id="next">Sākt</button>
+      <button class="btn btn-success btn-lg" id="next">Sākt</button>
     </div>
   </div>
 </div>
