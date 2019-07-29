@@ -56,8 +56,7 @@ var wordsSounds = [
   ["sounds/052.wav","sounds/053.wav","sounds/054.wav"],
   ["sounds/055.wav","sounds/056.wav","sounds/057.wav"],
   ["sounds/058.wav","sounds/059.wav","sounds/060.wav"],
-  ["sounds/061.wav","sounds/062.wav","sounds/063.wav"],
-  ["sounds/064.wav","sounds/065.wav","sounds/066.wav"]  
+  ["sounds/061.wav","sounds/062.wav","sounds/063.wav"] 
 ];
 
 function textOutputAndClicks(){
