@@ -1,0 +1,48 @@
+body {
+  background: #833ab43a;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fcb0452d), color-stop(#fd1d1d3d), to(#833ab438));
+  background: linear-gradient(to right, #fcb0452d, #fd1d1d3d, #833ab438);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+  min-height: calc(100vh - 50px - 110px);
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+.container {
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+#skills1, #skills2, #skills3, #skills4, #skills5, #card-one, #card-two {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#card-one, #card-two, #card-three, #card-four, #card-five {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
