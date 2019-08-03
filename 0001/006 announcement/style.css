@@ -1,0 +1,15 @@
+*{
+  margin:0;
+}
+
+#container{
+  background-color: rgba(68, 255, 77, 0.281);
+  text-align: center;
+  padding: 10px;
+}
+.first{
+  font-size:20px;
+}
+.first{
+  padding-top: 5px;
+}
